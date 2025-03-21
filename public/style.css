@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    background-color: #3E3F5B;
+}
+
+h2 {
+    color: #333;
+}
+
+.netflix-subtitle-container {
+    color: black;
+    font-size: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    /* Center children horizontally */
+    align-items: center;
+    /* Center children vertically */
+    width: 100%;
+    /* Adjust based on content needs */
+    height: 100%;
+    user-select: text;
+}
+.current-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    background-color: #F6F1DE;
+}
+
+.current-subtitle::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+}
+
+.chinese-text, .netflix-pinyin {
+    margin: 0; /* Remove any default margin */
+    padding: 0;
+}
+
+.netflix-pinyin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center pinyin */
+    font-size: 2rem;
+    gap: 2px;
+}
+
+/* Optional: Adjust line height for better readability */
+.chinese-text {
+    line-height: normal;
+}
+
+
+.grammar-explain {
+    width: 50%;
+    /* Take up 50% of parent width */
+    display: flex;
+    /* Flexbox for button + text */
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    padding: 1rem;
+    /* Align button at the top */
+    gap: 10px;
+    /* Add spacing between button and text */
+    max-height: 100%;
+    height: 100%;
+    background-color: #F6F1DE;
+    box-sizing:border-box;
+}
+
+.grammar-explain button {
+    flex-shrink: 0;
+    /* Prevent button from growing */
+    font-size: 2rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: #ACD3A8;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.grammar-ai-text {
+    flex-grow: 1;
+    /* Allow text div to expand */
+    max-height: 80%;
+    height: 805;
+    /* Limit height to parent */
+    overflow-y: auto;
+    /* Enable vertical scrolling when overflowing */
+    border: 1px solid #ccc;
+    /* Optional: Add a border */
+    padding: 10px;
+    /* Optional: Add some padding */
+    background-color: #f9f9f9;
+    /* Optional: Light background */
+    font-size: 2rem;
+}

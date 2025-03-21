@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "module": "NodeNext",
+        "target": "ES6",
+        "lib": ["ES6", "dom"], 
+        "jsx": "react",
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+    },
+    "include": [
+        "src"
+    ]
+}

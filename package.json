@@ -1,0 +1,29 @@
+{
+  "name": "learn_chinese_netflix",
+  "version": "1.0.0",
+  "description": "Chinese Learning Extension on Netflix",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && npx webpack --mode production"
+  },
+  "author": "duykhanhtran1808",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.309",
+    "@types/pinyin": "^2.10.2",
+    "@types/react": "^19.0.11",
+    "@types/react-dom": "^19.0.4",
+    "copy-webpack-plugin": "^13.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.2",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "pinyin": "^4.0.0-alpha.2",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "segmentit": "^2.0.3"
+  }
+}

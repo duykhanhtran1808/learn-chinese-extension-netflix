@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Learn Chinese On Netflix",
+  "version": "1.0",
+  "permissions": [
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://www.netflix.com/*"
+      ],
+      "resources": [
+        "inject-script.js",
+        "style.css"
+      ]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.netflix.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": ["style.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
