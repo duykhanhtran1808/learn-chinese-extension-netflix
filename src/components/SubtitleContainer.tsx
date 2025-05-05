@@ -110,7 +110,7 @@ export const SubtitleContainer: React.FC = () => {
     const explain = async () => {
         if (!currentText) return;
         setIsPendingExplain(true)
-        const API_KEY = ""; // Replace with your actual API key
+        const API_KEY = ""; // Hello World
         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
         const requestBody = {
